@@ -1,7 +1,7 @@
 //////////IMPORTS///////////////////
-
 @import '_normalize';
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic,500italic,700italic,300);
+
 //////////VARIABLES/MIXINS///////////
 $font: 'Ubuntu', sans-serif;
 
@@ -18,28 +18,40 @@ html {
   font-family: $font;
   margin: 0;
   padding: 0;
+  background-color: #EBEBEB;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
 
 *,*:after, *:before {
   box-sizing: border-box;
 }
 
+body {
+  line-height: 1.5;
+}
 
 ///////ELEMENT STYLES////////////////
 .container {
-  max-width: 500px;
-  height: 550px;
+  max-width: 940px;
+  height: 700px;
   @include marginLR;
-  padding-top: 32px;
+  padding-top: 64px;
+//  background-color: red;
+
+  ////////CARD/////////////////////////
   .card {
-   @include marginLR;
+    @include marginLR;
     border: 1px solid #333;
-    max-width: 400px;
+    max-width: 500px;
     height: 350px;
     text-align: center;
+    background-color: #fff;
     color: #333;
+  //  background-color: blue;
     h2 {
-      padding-top: 80px;
+      padding-top: 48px;
       font-size: 3rem;
       margin-bottom: 48px;
     }
@@ -47,21 +59,46 @@ html {
       font-size: 2rem;
     }
   }
-  .bottom {
-   @include marginLR;
-    width: 400px;
+
+  /////////ANSWER BUTTON/////////////////
+  .answer-button {
+    @include marginLR;
+    width: 500px;
     height: 100px;
     text-align: center;
     background-color: #15C19C;
     //border-bottom: 10px solid #12AD8C;
     cursor: pointer;
+  //  background-color: yellow;
     &:hover {
       opacity: .9;
     }
     .answer {
-     font-size: 3.5rem;
-     padding-top: 28px;
-     color: #fff;
+      font-size: 3.5rem;
+      padding-top: 28px;
+      color: #fff;
+    }
+  }
+
+  /////ORBS//////////
+  .orbs {
+    @include marginLR;
+    padding-top: 16px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  //  background-color: orange;
+    .orb {
+      margin: 0 2px;
+      width: 10px;
+      height: 10px;
+      border-radius: 30px;
+      display: inline-block;
+      background-color: #8AE0CD;
+    }
+    .selected {
+      background-color: #588F83;
     }
   }
 }
