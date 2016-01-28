@@ -361,7 +361,7 @@ html {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #EBEBEB;
+  background-color: #EFEFEF;
   -webkit-user-select: none;
   /* Chrome/Safari */
   -moz-user-select: none;
@@ -395,7 +395,21 @@ body {
       font-size: 3rem;
       margin-bottom: 48px; }
     .container .card .question {
-      font-size: 2rem; }
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 104px; }
+  .container .buttons {
+    max-width: 500px; }
+    .container .buttons input[type=submit] {
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 4rem;
+      width: 246px; }
+    .container .buttons .wrong {
+      background-color: #c1153a; }
+    .container .buttons .correct {
+      background-color: #15c146; }
   .container .answer-button {
     margin-left: auto;
     margin-right: auto;
