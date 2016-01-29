@@ -373,7 +373,8 @@ html {
   box-sizing: border-box; }
 
 body {
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #333; }
 
 .container {
   max-width: 940px;
@@ -431,12 +432,12 @@ body {
     justify-content: center; }
     .container .orbs .orb {
       margin: 0 2px;
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
       border-radius: 30px;
       display: inline-block;
       background-color: #8AE0CD; }
-    .container .orbs .selected {
+    .container .orbs .select {
       background-color: #588F83; }
 
 /*# sourceMappingURL=main.css.map */
