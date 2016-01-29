@@ -18,7 +18,7 @@ html {
   font-family: $font;
   margin: 0;
   padding: 0;
-  background-color: #EFEFEF;
+  background-color: #FAFAFA;
   -webkit-user-select: none; /* Chrome/Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+ */
@@ -38,7 +38,20 @@ body {
   height: 700px;
   @include marginLR;
   padding-top: 64px;
+  position: relative;
 //  background-color: red;
+  .fa-arrow-left, .fa-arrow-right {
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+  }
+  .fa-arrow-left {
+    left: 10%;
+
+  }
+  .fa-arrow-right {
+    right: 10%;
+  }
 
   ////////CARD/////////////////////////
   .card {
@@ -51,36 +64,32 @@ body {
     color: #333;
   //  background-color: blue;
     h2 {
-      padding-top: 48px;
+      padding-top: 64px;
       font-size: 3rem;
       margin-bottom: 48px;
     }
     .question {
       font-size: 2rem;
       display: block;
-      margin-bottom: 104px;
+      margin-bottom: 66px;
     }
-  }
 
 
   /////BUTTONS////////////////////////////
-  .buttons {
-    max-width: 500px;
-    input[type=submit] {
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 4rem;
-      width: 246px;
-    }
-    .wrong {
-      background-color:	#c1153a;
-    }
-    .correct {
-      background-color: #15c146;
-    }
+    // input[type=submit] {
+    //   border: none;
+    //   color: #fff;
+    //   font-weight: bold;
+    //   font-size: 3.5rem;
+    //   width: 100%;
+    // }
+    // .wrong {
+    //   background-color:	#c1153a;
+    // }
+    // .correct {
+    //   background-color: #15c146;
+    // }
   }
-
 
 
   /////////ANSWER BUTTON/////////////////
